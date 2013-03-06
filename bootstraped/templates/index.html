@@ -3,9 +3,11 @@
 {% block content %}
 <!-- If we have articles to display -->
 {% if articles %}
+	{% block index_header %}
+	{% endblock %}
 	<!-- Iterate through the articles in the page -->
 	{% for article in (articles_page.object_list if articles_page else articles) %}
-		{% if loop.first and not articles_page.has_previous() %}
+		{% if loop.first and not articles_page.has_previous() and not category and not tag%}
 		<p>
 		Hello and Welcome to {{ SITENAME }} - A Blog by {{ AUTHOR }}. 
 		<br/><br/>
