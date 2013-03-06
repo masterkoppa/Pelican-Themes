@@ -7,7 +7,7 @@ It heavily depends on the [Bootstrap Framework](http://twitter.github.com/bootst
 Extra Variables
 ===============
 The following are extra variables that you can include in your 
-sites config.
+site's config.
 
 ## DEFAULT_TRUNCATE ##
 Allows you to customize the size of the except shown at the main
